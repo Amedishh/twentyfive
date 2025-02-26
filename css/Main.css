@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#mainheader {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    height: 75px;
+}
+/* #mainheader {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    grid-template-rows: 75px;
+    grid-template-areas: 
+    'hd1 hd2'
+    ;
+    width: 100%;
+    height: 10vh;
+} */
+
+#hd1 {
+    /* grid-area: hd1; */
+    background-color: red;
+    display: flex;
+    height: 100%;
+}
+
+#hd2 {
+    /* grid-area: hd2; */
+    background-color: olive;
+    display: flex;
+    height:100%;
+}
+
+#secondheader {
+    display: grid;
+    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    'shd1 shd2 shd3 shd4 shd5 shd6 shd7 shd8 shd9'
+    ;
+    width: 100%;
+}
+
+#shd1 {
+    display: flex;
+    background-color: blue;
+    grid-area: shd1;
+}
+
+#shd2 {
+    display: flex;
+    background-color: orange;
+    grid-area: shd2;
+}
+
+#shd3 {
+    display: flex;
+    background-color: green;
+    grid-area: shd3;
+}
+
+#shd4 {
+    display: flex;
+    background-color: brown;
+    grid-area: shd4;
+}
+
+#shd5 {
+    display: flex;
+    background-color: gray;
+    grid-area: shd5;
+}
+
+#shd6 {
+    display: flex;
+    background-color: pink;
+    grid-area: shd6;
+}
+
+#shd7 {
+    display: flex;
+    background-color: cyan;
+    grid-area: shd7;
+}
+
+#shd8 {
+    display: flex;
+    background-color: indigo;
+    grid-area: shd8;
+}
+
+#shd9 {
+    display: flex;
+    background-color: antiquewhite;
+    grid-area: shd9;
+}
+
+
