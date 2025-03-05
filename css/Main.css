@@ -22,14 +22,12 @@ body {
 #hd1 {
     /* grid-area: hd1; */
     background-color: red;
-    display: flex;
     height: 100%;
 }
 
 #hd2 {
     /* grid-area: hd2; */
     background-color: olive;
-    display: flex;
     height:100%;
 }
 
@@ -44,57 +42,89 @@ body {
 }
 
 #shd1 {
-    display: flex;
     background-color: blue;
     grid-area: shd1;
 }
 
 #shd2 {
-    display: flex;
     background-color: orange;
     grid-area: shd2;
 }
 
 #shd3 {
-    display: flex;
     background-color: green;
     grid-area: shd3;
 }
 
 #shd4 {
-    display: flex;
     background-color: brown;
     grid-area: shd4;
 }
 
 #shd5 {
-    display: flex;
     background-color: gray;
     grid-area: shd5;
 }
 
 #shd6 {
-    display: flex;
     background-color: pink;
     grid-area: shd6;
 }
 
 #shd7 {
-    display: flex;
     background-color: cyan;
     grid-area: shd7;
 }
 
 #shd8 {
-    display: flex;
     background-color: indigo;
     grid-area: shd8;
 }
 
 #shd9 {
-    display: flex;
     background-color: antiquewhite;
     grid-area: shd9;
 }
 
+#firstsite {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px 500px 200px;
+    grid-template-areas:
+    'sc1'
+    'sc2'
+    'ft'
+    ;
+}
+
+#sc1 {
+    grid-area: sc1;
+    background-color: rgb(78, 74, 74);
+}
+
+#sc2 {
+    grid-area: sc2;
+    background-color: rgb(145, 129, 129);
+}
+
+#ft {
+    grid-area: ft;
+    background-color: rgb(195, 114, 114);
+}
+
+#menuIcon {
+    padding: 5px;
+    width: 30px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 500px) {
+
+    #secondheader {
+        display: none !important;
+    }
+
+
+}
 
