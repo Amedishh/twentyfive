@@ -21,13 +21,13 @@ body {
 
 #hd1 {
     /* grid-area: hd1; */
-    background-color: red;
+    background-color: rgb(7, 6, 28);
     height: 100%;
 }
 
 #hd2 {
     /* grid-area: hd2; */
-    background-color: olive;
+    background-color: rgb(7, 6, 28);
     height:100%;
 }
 
@@ -42,47 +42,47 @@ body {
 }
 
 #shd1 {
-    background-color: blue;
+    background-color: rgb(12, 10, 46);
     grid-area: shd1;
 }
 
 #shd2 {
-    background-color: orange;
+    background-color: rgb(12, 10, 46);
     grid-area: shd2;
 }
 
 #shd3 {
-    background-color: green;
+    background-color: rgb(12, 10, 46);
     grid-area: shd3;
 }
 
 #shd4 {
-    background-color: brown;
+    background-color: rgb(12, 10, 46);
     grid-area: shd4;
 }
 
 #shd5 {
-    background-color: gray;
+    background-color: rgb(12, 10, 46);
     grid-area: shd5;
 }
 
 #shd6 {
-    background-color: pink;
+    background-color: rgb(12, 10, 46);
     grid-area: shd6;
 }
 
 #shd7 {
-    background-color: cyan;
+    background-color: rgb(12, 10, 46);
     grid-area: shd7;
 }
 
 #shd8 {
-    background-color: indigo;
+    background-color: rgb(12, 10, 46);
     grid-area: shd8;
 }
 
 #shd9 {
-    background-color: antiquewhite;
+    background-color: rgb(12, 10, 46);
     grid-area: shd9;
 }
 
@@ -99,23 +99,60 @@ body {
 
 #sc1 {
     grid-area: sc1;
-    background-color: rgb(78, 74, 74);
+    background-color: rgb(31, 29, 58);
 }
 
 #sc2 {
     grid-area: sc2;
-    background-color: rgb(145, 129, 129);
+    background-color: rgb(31, 29, 58);
 }
 
 #ft {
     grid-area: ft;
-    background-color: rgb(195, 114, 114);
+    background-color: rgb(7, 6, 28);
+}
+
+#hd1, #hd2, #shd1, #shd2, #shd3, #shd4, #shd5, #shd6, #shd7, #shd8, #shd9, #sc1, #sc2, #ft {
+    outline: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 #menuIcon {
     padding: 5px;
     width: 30px;
     cursor: pointer;
+    display: none;
+}
+
+.menu {
+    height: 100vh;
+    width: 80vw;
+    left: -90vw;
+    position: fixed;
+    top: 0;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+    background-color: white;
+    z-index: 10;
+    padding-top: 20px;
+}
+
+.menu.show {
+    left: 0;
+}
+
+.fade-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    z-index: 5;
+}
+
+.fade-layer.visible {
+    display: block;
 }
 
 
@@ -123,6 +160,10 @@ body {
 
     #secondheader {
         display: none !important;
+    }
+
+    #menuIcon {
+        display: block;
     }
 
 
