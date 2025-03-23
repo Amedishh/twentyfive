@@ -60,6 +60,46 @@ body {
     padding-right: 10px;
 }
 
+#guide {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    left: 300px;
+    opacity: 1; /* Initially visible */
+    visibility: visible; /* Initially visible */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#guide-green {
+    height: 40px;
+    display: flex;
+    padding-right: 20px;
+    opacity: 0; /* Initially invisible */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+
+#shd3:hover #guide {
+    opacity: 0; /* Hide gray guide */
+    visibility: hidden; /* Hide gray guide */
+}
+
+#shd3:hover #guide-green {
+    opacity: 1; /* Show green guide */
+    visibility: visible; /* Make green guide visible */
+}
+
+#guide:hover {
+    opacity: 0; /* Hide gray guide when hovered */
+    visibility: hidden; /* Hide gray guide */
+}
+
+#guide-green:hover {
+    opacity: 1; /* Make sure green guide stays visible on hover */
+    visibility: visible; /* Green guide remains visible */
+}
+
+
 #shd4 {
     background-color: rgb(12, 10, 46);
     grid-area: shd4;
@@ -161,6 +201,7 @@ body {
 
 a {
     text-decoration: none;
+    color: rgb(236, 236, 236);
 }
 
 #firstsite {
