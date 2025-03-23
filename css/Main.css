@@ -54,26 +54,46 @@ body {
 #shd3 {
     background-color: rgb(12, 10, 46);
     grid-area: shd3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #shd4 {
     background-color: rgb(12, 10, 46);
     grid-area: shd4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #shd5 {
     background-color: rgb(12, 10, 46);
     grid-area: shd5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #shd6 {
     background-color: rgb(12, 10, 46);
     grid-area: shd6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #shd7 {
     background-color: rgb(12, 10, 46);
     grid-area: shd7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 #shd8 {
@@ -85,6 +105,59 @@ body {
     background-color: rgb(12, 10, 46);
     grid-area: shd9;
 }
+
+/* MOBIL DELEN FÖR SECONDHEADER*/
+
+#mobile-shd3 {
+    background-color: rgb(12, 10, 46);
+    grid-area: shd3;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#mobile-shd4 {
+    background-color: rgb(12, 10, 46);
+    grid-area: shd4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#mobile-shd5 {
+    background-color: rgb(12, 10, 46);
+    grid-area: shd5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#mobile-shd6 {
+    background-color: rgb(12, 10, 46);
+    grid-area: shd6;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#mobile-shd7 {
+    background-color: rgb(12, 10, 46);
+    grid-area: shd7;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
+    display: none;
+}
+
+/* MOBIL DELEN FÖR SECONDHEADER*/
 
 a {
     text-decoration: none;
@@ -156,6 +229,12 @@ p {
 
 #hd1, #hd2, #shd1, #shd2, #shd3, #shd4, #shd5, #shd6, #shd7, #shd8, #shd9, #sc1, #sc2, #ft {
     outline: 1px solid rgba(61, 59, 103, 0.5);
+}
+
+#shd1, #shd2, #shd3, #shd4, #shd5, #shd6, #shd7, #shd8, #shd9, #mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
 }
 
 #menuIcon {
@@ -235,6 +314,16 @@ p {
         color: rgb(236, 236, 236);
 
     }
+
+    #mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
+        display: block;
+    }
+
+    #shd3, #shd4, #shd5, #shd6, #shd7 {
+        display: none;
+    }
+
+
 
 }
 
