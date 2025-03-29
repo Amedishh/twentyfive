@@ -25,10 +25,20 @@ body {
     height: 100%;
 }
 
+#PCLogo {
+    position: absolute;
+    top: 2px;
+    left: 5px;
+    height: 70px;
+    width: 160px;
+}
+
 #hd2 {
     /* grid-area: hd2; */
     background-color: rgb(7, 6, 28);
     height:100%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #secondheader {
@@ -51,20 +61,22 @@ body {
     grid-area: shd2;
 }
 
+/*-------------------------------------------------------------------------*/
+
 #shd3 {
     background-color: rgb(12, 10, 46);
     grid-area: shd3;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 #guide {
     height: 40px;
     display: flex;
     position: absolute;
-    left: 300px;
+    left: 290px;
     opacity: 1; /* Initially visible */
     visibility: visible; /* Initially visible */
     transition: opacity 0.3s ease; /* Smooth transition */
@@ -73,6 +85,8 @@ body {
 #guide-green {
     height: 40px;
     display: flex;
+    position: absolute;
+    left: 290px;
     padding-right: 20px;
     opacity: 0; /* Initially invisible */
     visibility: hidden; /* Initially hidden */
@@ -99,6 +113,7 @@ body {
     visibility: visible; /* Green guide remains visible */
 }
 
+/*-------------------------------------------------------------------------*/
 
 #shd4 {
     background-color: rgb(12, 10, 46);
@@ -106,8 +121,51 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 5px;
 }
+
+#component {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 425px;
+    opacity: 1; 
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#component-green {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 425px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#shd4:hover #component {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#shd4:hover #component-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#component:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#component-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #shd5 {
     background-color: rgb(12, 10, 46);
@@ -115,8 +173,51 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 25px;
 }
+
+#trend {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 575px;
+    opacity: 1; 
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#trend-green {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 575px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#shd5:hover #trend {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#shd5:hover #trend-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#trend:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#trend-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #shd6 {
     background-color: rgb(12, 10, 46);
@@ -124,8 +225,51 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 5px;
 }
+
+#benchmark {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 696px;
+    opacity: 1; 
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#benchmark-green {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 696px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#shd6:hover #benchmark {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#shd6:hover #benchmark-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#benchmark:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#benchmark-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #shd7 {
     background-color: rgb(12, 10, 46);
@@ -133,7 +277,48 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10px;
+    padding-right: 30px;
+}
+
+#builder {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 850px;
+    opacity: 1; 
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#builder-green {
+    height: 35px;
+    display: flex;
+    position: absolute;
+    left: 847px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#shd7:hover #builder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#shd7:hover #builder-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#builder:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#builder-green:hover {
+    opacity: 1;
+    visibility: visible;
 }
 
 #shd8 {
@@ -146,51 +331,263 @@ body {
     grid-area: shd9;
 }
 
+
+
+
 /* MOBIL DELEN FÖR SECONDHEADER*/
+
+
+
 
 #mobile-shd3 {
     background-color: rgb(12, 10, 46);
-    grid-area: shd3;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    padding-left: 280px;
+    padding-top: 40px;
 }
+
+#mobile-guide {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 52px;
+    left: 330px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-guide-green {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 52px;
+    left: 330px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-shd3:hover #mobile-guide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-shd3:hover #mobile-guide-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-guide:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-guide-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #mobile-shd4 {
     background-color: rgb(12, 10, 46);
-    grid-area: shd4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    padding-left: 230px;
+    padding-top: 40px;
 }
+
+#mobile-component {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 152px;
+    left: 335px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-component-green {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 152px;
+    left: 335px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-shd4:hover #mobile-component {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-shd4:hover #mobile-component-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-component:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-component-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #mobile-shd5 {
     background-color: rgb(12, 10, 46);
-    grid-area: shd5;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    padding-left: 270px;
+    padding-top: 40px;
 }
+
+#mobile-trend {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 252px;
+    left: 335px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-trend-green {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 252px;
+    left: 335px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-shd5:hover #mobile-trend {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-shd5:hover #mobile-trend-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-trend:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-trend-green:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*-------------------------------------------------------------------------*/
 
 #mobile-shd6 {
     background-color: rgb(12, 10, 46);
-    grid-area: shd6;
+    padding-left: 230px;
+    padding-top: 40px;
+}
+
+#mobile-benchmark {
+    height: 40px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    position: absolute;
+    top: 352px;
+    left: 330px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-benchmark-green {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 352px;
+    left: 330px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-shd6:hover #mobile-benchmark {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-shd6:hover #mobile-benchmark-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-benchmark:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-benchmark-green:hover {
+    opacity: 1;
+    visibility: visible;
 }
 
 #mobile-shd7 {
     background-color: rgb(12, 10, 46);
-    grid-area: shd7;
+    padding-left: 270px;
+    padding-top: 40px;
+}
+
+#mobile-builder {
+    height: 40px;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 10px;
+    position: absolute;
+    top: 452px;
+    left: 340px;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-builder-green {
+    height: 40px;
+    display: flex;
+    position: absolute;
+    top: 452px;
+    left: 337px;
+    padding-right: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+}
+
+#mobile-shd7:hover #mobile-builder {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-shd7:hover #mobile-builder-green {
+    opacity: 1;
+    visibility: visible;
+}
+
+#mobile-builder:hover {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#mobile-builder-green:hover {
+    opacity: 1;
+    visibility: visible;
 }
 
 #mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
@@ -268,7 +665,7 @@ p {
     font-weight: 400;
 }
 
-#hd1, #hd2, #shd1, #shd2, #shd3, #shd4, #shd5, #shd6, #shd7, #shd8, #shd9, #sc1, #sc2, #ft {
+#hd1, #hd2, #shd1, #shd2, #shd3, #shd4, #shd5, #shd6, #shd7, #shd8, #shd9, #sc1, #sc2, #ft, #mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
     outline: 1px solid rgba(61, 59, 103, 0.5);
 }
 
@@ -280,6 +677,7 @@ p {
 
 #menuIcon {
     padding: 5px;
+    height: 25px;
     width: 30px;
     cursor: pointer;
     display: none;
@@ -296,6 +694,17 @@ p {
     background-color: white;
     z-index: 10;
     padding-top: 20px;
+    display: grid;
+    grid-auto-rows: 100px;
+    /* grid-template-columns: 20% 30%;
+    grid-template-rows: 20px;
+    grid-template-areas:
+    'mobile-shd3'
+    'mobile-shd4'
+    'mobile-shd5'
+    'mobile-shd6'
+    'mobile-shd7'
+    ; */
 }
 
 .menu.show {
@@ -318,7 +727,7 @@ p {
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 505px) {
 
     #secondheader {
         display: none !important;
