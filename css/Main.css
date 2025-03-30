@@ -541,6 +541,8 @@ body {
     visibility: visible;
 }
 
+/*-------------------------------------------------------------------------*/
+
 #mobile-shd7 {
     background-color: rgb(12, 10, 46);
     padding-left: 270px;
@@ -590,6 +592,8 @@ body {
     visibility: visible;
 }
 
+/*-------------------------------------------------------------------------*/
+
 #mobile-shd3, #mobile-shd4, #mobile-shd5, #mobile-shd6, #mobile-shd7 {
     display: none;
 }
@@ -604,7 +608,7 @@ a {
 #firstsite {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 500px 500px 200px;
+    grid-template-rows: auto auto 200px;
     grid-template-areas:
     'sc1'
     'sc2'
@@ -615,10 +619,20 @@ a {
 #sc1 {
     grid-area: sc1;
     background-color: rgb(30, 28, 61);
+    overflow:auto;
+    height: 500px;
 }
 
+#benchmarks-sc1 {
+    grid-area: sc1;
+    background-color: rgb(30, 28, 61);
+    overflow:auto;
+    height: 1180px;
+}
+
+
 #gaming-pc {
-    height: 500px;
+    height: 495px;
 }
 
 
@@ -638,10 +652,77 @@ a {
     display: none;
 }
 
+#AMD-CPU {
+    height: 120px;
+    position: relative;
+    top: -90px;
+    left: 950px;
+}
+
+#guide-sc1 {
+    grid-area: sc1;
+    background-color: rgb(30, 28, 61);
+    height: 800px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#ahmad {
+    position: relative;
+    height: 400px;
+    width: 280px;
+    left: 200px;
+}
+
+#ahmadh3 {
+    position: relative;
+    left: 215px;
+}
+
+#ivo {
+    position: relative;
+    height: 400px;
+    width: 280px;
+    left: 500px;
+}
+
+#ivoh3 {
+    position: relative;
+    left: 800px;
+    bottom: 50px;
+}
+
 #sc2 {
     grid-area: sc2;
     background-color: rgb(30, 28, 61);
+    height: 500px;
 }
+
+#hidden-sc2 {
+    grid-area: sc2;
+    background-color: rgb(30, 28, 61);
+    height: 0;
+    overflow: hidden;
+}
+
+#benchmarks-sc2 {
+    grid-area: sc2;
+    background-color: rgb(30, 28, 61);
+    overflow-x: scroll;  
+    display: flex;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding: 0px;
+}
+
+.stats {
+    height: 500px;
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
 
 #ft {
     grid-area: ft;
@@ -673,6 +754,14 @@ p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
     font-size: 0.9em;
+}
+
+h3 , h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    line-height: 1.6;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #menuIcon {
@@ -771,6 +860,39 @@ p {
 
     #shd3, #shd4, #shd5, #shd6, #shd7 {
         display: none;
+    }
+
+    #AMD-CPU {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+
+    #ahmad {
+        position: relative;
+        height: 200px;
+        width: 140px;
+        left: 50px;
+    }
+    
+    #ahmadh3 {
+        position: relative;
+        left: 32px;
+        font-size: 0.8em;
+    }
+    
+    #ivo {
+        position: relative;
+        height: 200px;
+        width: 140px;
+        left: 150px;
+    }
+    
+    #ivoh3 {
+        position: relative;
+        left: 278px;
+        bottom: 35px;
+        font-size: 0.8em;
     }
 
 
